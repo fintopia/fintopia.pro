@@ -1,0 +1,13 @@
+[Unit]
+Description=uWSGI instance to serve fintopia.dev
+After=network.target
+
+[Service]
+User=mpolly
+Group=www-data
+WorkingDirectory=/srv/www/fintopia.dev
+Environment="PATH=/srv/www/fintopia.dev/venv/bin"
+ExecStart=/srv/www/fintopia.dev/venv/bin/uwsgi --ini fintopia.ini
+
+[Install]
+WantedBy=multi-user.target
