@@ -1,5 +1,5 @@
 [Unit]
-Description=uWSGI instance to serve fintopia.dev
+Description=uWSGI instance to serve fintopia.pro
 After=network.target
 
 [Service]
