@@ -7,7 +7,7 @@ User=mpolly
 Group=www-data
 WorkingDirectory=/srv/www/fintopia.pro
 Environment="PATH=/srv/www/fintopia.pro/venv/bin"
-ExecStart=/srv/www/fintopia.dev/venv/bin/uwsgi --ini fintopia.ini
+ExecStart=/srv/www/fintopia.pro/venv/bin/uwsgi --ini fintopia.ini
 
 [Install]
 WantedBy=multi-user.target
